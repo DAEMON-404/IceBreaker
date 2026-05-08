@@ -91,20 +91,6 @@
       icebreaker-aarch64 = mkSystem "aarch64-linux";
     };
 
-    # ── Standalone packages ────────────────────────────────────
-    # Build with:  nix build .#icebreaker-bench
-    # Produces ./result/bin/icebreaker-bench — a self-contained
-    # benchmark binary that can be scp'd to a Kali VM as well
-    # (the underlying script is POSIX-portable; on Kali install
-    #  `sysstat jq` via apt and run the raw scripts/icebreaker-bench.sh
-    #  rather than the wrapped store path).
-    packages = forAllSystems (system:
-      let pkgs = import nixpkgs { inherit system; };
-      in {
-        icebreaker-bench = pkgs.callPackage ./pkgs/icebreaker-bench.nix { };
-        default          = pkgs.callPackage ./pkgs/icebreaker-bench.nix { };
-      });
-
     # `nix fmt` reserved slot — alejandra is in nix-helpers.nix already.
     # formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
   };
