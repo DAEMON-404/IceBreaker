@@ -15,7 +15,7 @@ let
   # Self-contained benchmark wrapper (scripts/icebreaker-bench.sh + runtime PATH).
   # Built from pkgs/icebreaker-bench.nix and installed system-wide so every
   # user has `icebreaker-bench` on $PATH after `nrs`.
-  icebreaker-bench = pkgs.callPackage ../../pkgs/icebreaker-bench.nix { };
+  # icebreaker-bench = pkgs.callPackage ../../pkgs/icebreaker-bench.nix { };
 in
 {
   # ============================================================
@@ -316,7 +316,7 @@ in
     # Runs identically on NixOS and Kali for the honours-project
     # comparison. See docs/benchmarking.md for methodology.
     # Invoke via `bench-idle <label>` / `bench-load <label>` aliases.
-    icebreaker-bench
+    # icebreaker-bench
     claude-code
 
     # ── Add your always-available tools below ───────────────
