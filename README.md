@@ -1128,6 +1128,6 @@ All raw JSONL sample logs are retained in the repository's `bench-results/` layo
 <p align="center">
   <img src="docs/images/graphics/Avatar.jpg" alt="alt text" width="200" height="200"/>
 </p>
-<sub><i>▓▒░ built by <b>DΛΣMӨП</b> with Nix, black ice, and too much RedBull ░▒▓</i></sub>
+<sub><i>▓▒░ built by <b>DΛΣMӨП</b> with Nix, black ice, and too much RedBull oh and big shout out to grammerly the documentation would be an absolute mess without it ░▒▓</i></sub>
 
 </div>
